@@ -1,0 +1,10 @@
+#invitation {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 1rem;
+  font-size: 1.5rem;
+}

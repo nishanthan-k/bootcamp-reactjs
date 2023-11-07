@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container_main_parent_child {
+  height: 70vh;
+  width: 70%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

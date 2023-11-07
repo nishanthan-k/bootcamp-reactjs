@@ -1,0 +1,103 @@
+import { Route, Switch } from "react-router-dom/cjs/react-router-dom.min";
+import { BrowserRouter as Router } from "react-router-dom/cjs/react-router-dom.min";
+import "./App.css";
+import Buttons from "./Buttons";
+import ES6Basics from "./ES6Basics";
+import Factorial from "./ES6/i-Design/Factorial";
+import Rest from "./ES6/i-Design/Rest";
+import Spread from "./ES6/i-Design/Spread";
+import Filter from "./ES6/i-Design/Filter";
+import Map1 from "./ES6/i-Design/Map1";
+import Reduce from "./ES6/i-Design/Reduce";
+import Sort from "./ES6/i-Design/Sort";
+import Find from "./ES6/i-Design/Find";
+import Map2 from "./ES6/i-Design/Map2";
+import String_Length from "./ES6/i-Design/String_Length";
+import Spread2 from "./ES6/i-Assess/Spread2";
+import Filter1 from "./ES6/i-Assess/Filter1";
+import Sort1 from "./ES6/i-Assess/Sort1";
+import ES6Advanced from "./ES6Advanced";
+import Set from "./ES6_Advanced/i-Design/Set";
+import Promises from "./ES6_Advanced/i-Design/Promises";
+import Object_entries from "./ES6_Advanced/i-Design/Object_entries";
+import LeftRightShift from "./ES6_Advanced/i-Design/LeftRightShit";
+import AsyncAwait from "./ES6_Advanced/i-Design/AsyncAwait";
+import Sayhelloinput from "./ES6_Advanced/i-Design/Say Hello/Sayhelloinput";
+import GradeCalculation from "./ES6_Advanced/i-Design/Grade Calculation/GradeCalculation";
+import BookCategories from "./ES6_Advanced/i-Design/BookCategories";
+import BooksAvailable from "./ES6_Advanced/i-Design/BooksAvailable";
+import ShoppingCart from "./ES6_Advanced/i-Assess/ShoppingCart";
+import PrimeComposite from "./ES6_Advanced/i-Assess/PrimeComposite";
+import ReactBasics from "./ReactBasics";
+import ClassComponentEg1 from "./React_Basics/i-Design/ClassComponentEg1";
+import CelebrationInvitation from "./React_Basics/i-Design/ CelebrationInvitation";
+import HomeEssentials from "./React_Basics/i-Design/HomeEssentials";
+import WelcomePage from "./React_Basics/i-Design/WelcomePage";
+import VotersList from "./React_Basics/i-Assess/VotersList";
+import AlumniMeet from "./React_Basics/i-Assess/AlumniMeet";
+import ReactComponents from "./ReactComponents"
+import HomeApp from "./React_Components/i-Design/MovieHomePage/src/HomeApp";
+import Course from "./React_Components/i-Design/Course/src/Course";
+import ParentChild from "./React_Components/i-Design/Parent_Child/src/ParentChild";
+import ReactKeys from "./React_Components/i-Design/ReactKeys/src/ReactKeys";
+import ConditionalRendering from "./React_Components/i-Assess/ConditionalRendering/src/ConditionalRendering";
+
+function App() {
+  return (
+    <>
+      <Router>
+        <Switch>
+          {/* Buttons  */}
+          <Route exact path="/" component={Buttons} />
+          <Route exact path="/ES6Basics" component={ES6Basics} />
+          <Route exact path="/ES6Basics/Factorial" component={Factorial} />
+          <Route exact path="/ES6Basics/Rest" component={Rest} />
+          <Route exact path="/ES6Basics/Spread" component={Spread} />
+          <Route exact path="/ES6Basics/Filter" component={Filter} />
+          <Route exact path="/ES6Basics/Map1" component={Map1} />
+          <Route exact path="/ES6Basics/Reduce" component={Reduce} />
+          <Route exact path="/ES6Basics/Sort" component={Sort} />
+          <Route exact path="/ES6Basics/Find" component={Find} />
+          <Route exact path="/ES6Basics/Map2" component={Map2} />
+          <Route exact path="/ES6Basics/String_Length" component={String_Length}/>
+          <Route exact path="/ES6Basics/Spread2" component={Spread2} />
+          <Route exact path="/ES6Basics/Filter1" component={Filter1} />
+          <Route exact path="/ES6Basics/Sort1" component={Sort1} />
+
+          <Route exact path="/ES6Advanced" component={ES6Advanced} />
+          <Route exact path="/ES6Advanced/Set" component={Set} />
+          <Route exact path="/ES6Advanced/Promises" component={Promises} />
+          <Route exact path="/ES6Advanced/Object_entries" component={Object_entries} />
+          <Route exact path="/ES6Advanced/LeftRightShift" component={LeftRightShift} />
+          <Route exact path="/ES6Advanced/AsyncAwait" component={AsyncAwait} />
+          <Route exact path="/ES6Advanced/SayHello" component={Sayhelloinput} />
+          <Route exact path="/ES6Advanced/GradeCalculation" component={GradeCalculation} />
+          <Route exact path="/ES6Advanced/BookCategories" component={BookCategories} />
+          <Route exact path="/ES6Advanced/BooksAvailable" component={BooksAvailable} />
+          <Route exact path="/ES6Advanced/ShoppingCart" component={ShoppingCart} />
+          <Route exact path="/ES6Advanced/PrimeComposite" component={PrimeComposite} />
+
+          {/* React Basics  */}
+          <Route exact path="/ReactBasics" component={ReactBasics} />
+          <Route exact path="/ReactBasics/HelloWorld" component={ClassComponentEg1} />
+          <Route exact path="/ReactBasics/CelebrationInvitation" component={CelebrationInvitation} />
+          <Route exact path="/ReactBasics/HomeEssentials" component={HomeEssentials} />
+          <Route exact path="/ReactBasics/WelcomePage" component={WelcomePage} />
+          <Route exact path="/ReactBasics/VotersList" component={VotersList} />
+          <Route exact path="/ReactBasics/AlumniMeet" component={AlumniMeet} />
+
+          {/* React Components  */}
+          <Route exact path="/ReactComponents" component={ReactComponents} />
+          <Route exact path="/ReactComponents/MoviePage" component={HomeApp} />
+          <Route exact path="/ReactComponents/Course" component={Course} />
+          <Route exact path="/ReactComponents/ParentChild" component={ParentChild} />
+          <Route exact path="/ReactComponents/ReactKeys" component={ReactKeys} />
+          <Route exact path="/ReactComponents/ConditionalRendering" component={ConditionalRendering} />
+
+        </Switch>
+      </Router>
+    </>
+  );
+}
+
+export default App;

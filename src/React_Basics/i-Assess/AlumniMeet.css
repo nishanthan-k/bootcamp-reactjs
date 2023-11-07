@@ -1,0 +1,14 @@
+.table-alumni {
+  border: 1px solid;
+  border-collapse: collapse;
+
+}
+
+.table-alumni {
+  padding: .2rem 1rem;
+  text-align: center;
+}
+
+h1, p {
+  margin-bottom: 1.5rem;
+}

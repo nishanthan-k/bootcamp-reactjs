@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.header {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgb(159, 45, 182);
+  color: white;
+}
+
+.header-list{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list-links {
+  color: white;
+  font-style: normal;
+}
+
+.show-time {
+  border: 2px solid white;
+  padding: 7px 7px;
+  font-weight: bold;
+}
