@@ -2,17 +2,18 @@
   box-sizing: border-box;
 }
 
-.now-screening {
+.NowScreening {
   padding: .5rem 2rem;
 }
 
-.section-title {
+.NowScreeningSectionTitle {
   font-weight: bold;
+  text-align: left;
   margin-bottom: .6rem;
 }
 
-.now-screening-list {
-  margin: 0;
+.NowScreeningList {
+  margin-top: 1rem !important;
   padding: 1.3rem;
   list-style-type: none;
   display: flex;
@@ -23,8 +24,9 @@
   border-radius: 10px;
 }
 
-li {
-  font-style: italic;
+.NowScreeningLsitItem {
+  font-style: italic !important;
+  text-align: left;
   color: rgb(75, 74, 74);
   font-size: .9rem;
 }

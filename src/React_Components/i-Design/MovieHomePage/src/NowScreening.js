@@ -4,14 +4,14 @@ import '../css/NowScreening.css'
 const NowScreening = () => {
   return (
     <>
-      <div className='now-screening'>
-          <p className='section-title'>Now Screening</p>
+      <div className='NowScreening' id='now-screening'>
+          <p className='NowScreeningSectionTitle' id='section-title'>Now Screening</p>
 
-          <ul className='now-screening-list'>
-            <li>Bombshell</li>
-            <li>Darbar</li>
-            <li>Hero</li>
-            <li>Chhapaak</li>
+          <ul className='NowScreeningList' id='now-screening-list'>
+            <li className='NowScreeningLsitItem'>Bombshell</li>
+            <li className='NowScreeningLsitItem'>Darbar</li>
+            <li className='NowScreeningLsitItem'>Hero</li>
+            <li className='NowScreeningLsitItem'>Chhapaak</li>
           </ul>
       </div>
     </>

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function ES6Basics() {
   const reload = () => {
-    setTimeout(() => {
-      window.location.reload()
-    }, 100);
+    // setTimeout(() => {
+    //   window.location.reload()
+    // }, 100);
   };
   
   return (

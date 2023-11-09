@@ -4,7 +4,7 @@ import React from "react";
 const MainContent = () => {
   return (
     <>
-      <div className="mainContent-parent-child"><p>Main Content</p></div>
+      <div className="mainContent-parent-child">Main Content</div>
     </>
   );
 };

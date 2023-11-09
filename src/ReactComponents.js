@@ -2,9 +2,9 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function ReactBasics() {
   const reload = () => {
-    setTimeout(() => {
-      window.location.reload();
-    }, 100);
+    // setTimeout(() => {
+    //   window.location.reload();
+    // }, 100);
   };
 
   return (
@@ -22,8 +22,11 @@ function ReactBasics() {
         <Link to="/ReactComponents/ReactKeys">
           <button onClick={reload}>React Keys</button>
         </Link>
-        <Link to="/ReactComponents/ConditionalRendering">
-          <button onClick={reload}>Conditional Rendering</button>
+        <Link to="/ReactComponents/CustomerBank">
+          <button onClick={reload}>Customer Bank</button>
+        </Link>
+        <Link to='/ReactComponents/MovieList'>
+          <button onClick={reload}>Movie List</button>
         </Link>
       </div>
     </>

@@ -43,12 +43,12 @@ const HomeEssentials = () => {
   ];
   return (
     <>
-      <div id="home-component">
-        <h1>Home Essentials</h1>
+      <div className="HomeEssentials" id="home-component">
+        <h1 className="HomeEssentialsHeading">Home Essentials</h1>
 
         <div className="item-row">
           <div className="item-col">
-            <h3 id="kitchen-items">Kitchen Essentials</h3>
+            <h3 className="HomeEssentialsItemHeading" id="kitchen-items">Kitchen Essentials</h3>
             <ul>
               {kitchenItemsPurchased.map((ele, i) => (
                 <li key={`kitchenitems${i}`} id={`kitchenitems${i}`}>{ele}</li>
@@ -57,7 +57,7 @@ const HomeEssentials = () => {
           </div>
 
           <div className="item-col">
-            <h3 id="utility-items">Utility</h3>
+            <h3 className="HomeEssentialsItemHeading" id="utility-items">Utility</h3>
             <ul>
               {utilityItemsPurchased.map((ele, i) => (
                 <li key={`utilityitems${i}`} id={`utilityitems${i}`}>{ele}</li>
@@ -66,7 +66,7 @@ const HomeEssentials = () => {
           </div>
 
           <div className="item-col">
-            <h3 id="decorative-items">Decorative Items</h3>
+            <h3 className="HomeEssentialsItemHeading" id="decorative-items">Decorative Items</h3>
             <ul>
               {homeDecortemsPurchased.map((ele, i) => (
                 <li key={`decorativeitems${i}`} id={`decorativeitems${i}`}>{ele}</li>
@@ -75,7 +75,7 @@ const HomeEssentials = () => {
           </div>
 
           <div className="item-col">
-            <h3 id="decorative-items">Bedroom Essential</h3>
+            <h3 className="HomeEssentialsItemHeading" id="decorative-items">Bedroom Essential</h3>
             <ul>
               {bedroomItemsPurchased.map((ele, i) => (
                 <li key={`bedroomitems${i}`} id={`bedroomitems${i}`}>{ele}</li>

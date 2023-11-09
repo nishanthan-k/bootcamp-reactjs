@@ -26,10 +26,10 @@ const AluminiMeet = () => {
 
   return (
     <>
-      <div>
-        <h1>Alumni Meet</h1>
+      <div className="AlumniMeet">
+        <h1 className="AlumniMeetTitle">Alumni Meet</h1>
 
-        <p>
+        <p className="AlumniMeetText">
           Alumni meet is a gathering of passed out students of an institution
           and it is a place where the institution feels proud on seeing its
           successful alumni. During their meet, the alumni community shares
@@ -38,31 +38,31 @@ const AluminiMeet = () => {
           the colleges most distinguished alumni.
         </p>
 
-        <h3>First alumni meet is scheduled on 25.02.2020</h3>
+        <h3 className="AlumniMeetTitleH3">First alumni meet is scheduled on 25.02.2020</h3>
 
-        <h2>Students Details Registered for alumni meet</h2>
+        <h2 className="AlumniMeetTitleH2">Students Details Registered for alumni meet</h2>
 
-        <table className="student-table table-alumni">
-          <thead className="table-alumni">
-            <tr className="table-alumni">
-            <th className="table-alumni">Name</th>
-            <th className="table-alumni">Department</th>
-            <th className="table-alumni">Passed out year</th>
-            <th className="table-alumni">Percentage</th>
-            <th className="table-alumni">Present Location</th>
-            <th className="table-alumni">Mobile</th>
+        <table className="AlumniMeetTable" id="student-table">
+          <thead>
+            <tr className="AlumniMeetTableItem">
+            <th className="AlumniMeetTableItem">Name</th>
+            <th className="AlumniMeetTableItem">Department</th>
+            <th className="AlumniMeetTableItem">Passed out year</th>
+            <th className="AlumniMeetTableItem">Percentage</th>
+            <th className="AlumniMeetTableItem">Present Location</th>
+            <th className="AlumniMeetTableItem">Mobile</th>
             </tr>
           </thead>
           <tbody>
             {
               StudentDetails.map((e, i) => (
-                <tr className="table-alumni" key={`e-id-${i}`} id={`e-id-${i}`}>
-                  <td className="table-alumni">{e.name}</td>
-                  <td className="table-alumni">{e.department}</td>
-                  <td className="table-alumni">{e.yearOfPassedOut}</td>
-                  <td className="table-alumni">{e.percentage}</td>
-                  <td className="table-alumni">{e.location}</td>
-                  <td className="table-alumni">{e.mobileNumber}</td>
+                <tr className="AlumniMeetTableItem" key={`e-id-${i}`} id={`e-id-${i}`}>
+                  <td className="AlumniMeetTableItem">{e.name}</td>
+                  <td className="AlumniMeetTableItem">{e.department}</td>
+                  <td className="AlumniMeetTableItem">{e.yearOfPassedOut}</td>
+                  <td className="AlumniMeetTableItem">{e.percentage}</td>
+                  <td className="AlumniMeetTableItem">{e.location}</td>
+                  <td className="AlumniMeetTableItem">{e.mobileNumber}</td>
                 </tr>
               ))
             }

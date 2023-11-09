@@ -1,21 +1,34 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
 }
 
-#content {
+.VotersList {
   width: 100%;
   height: 100vh;
+  padding-left: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: flex-start;
 }
 
-h1, h2 {
-  font-size: 2rem;
+.VoterListText {
+  text-align: left;
 }
 
-ul {
-  margin-left: 2rem;
+.VoterListTitle, .VoterListEligibleVote, .VoterListNonEligibleVote {
+  font-size: 2rem !important;
+}
+
+.VoterListEligibleVoters, .VoterListNonEligibleVoters {
+  padding-left: 2.5rem;
+}
+
+.VotersListListItems {
+  font-style: normal;
+  color: black;
+  text-align: left;
+  font-size: 1rem;
 }

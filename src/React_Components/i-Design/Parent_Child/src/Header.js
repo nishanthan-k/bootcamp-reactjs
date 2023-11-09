@@ -4,7 +4,7 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <header className="header-parent-child"><p>Header</p></header>
+      <header className="header-parent-child">Header</header>
     </>
   );
 };

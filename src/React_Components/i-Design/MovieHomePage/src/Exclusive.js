@@ -4,12 +4,12 @@ import '../css/Exclusive.css'
 const Exclusive = () => {
   return (
     <>
-      <div className="exclusive">
-        <p className="section-title">Coming Soon</p>
+      <div className='Exclusive' id="exclusive">
+        <p className='ExclusiveSectionTitle' id="section-title">Exclusive</p>
 
-        <ul className="exclusive-list">
-          <li>Bunker</li>
-          <li>CountDown</li>
+        <ul className='ExclusiveList' id="exclusive-list">
+          <li className='ExclusiveListItem'>Bunker</li>
+          <li className='ExclusiveListItem'>CountDown</li>
         </ul>
       </div>
     </>

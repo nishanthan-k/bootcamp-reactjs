@@ -4,22 +4,22 @@ import "../css/ReactKeys.css"
 const ReactKeys = () => {
 
   const desserts = [
-    {id:1,name:'Cone',src:require('../assets/icecream.jpeg')},
-    {id:2,name:'Brighams',src:require('../assets/brighams.jpeg')},
-    {id:3,name:'Milkshake',src:require('../assets/milkshake.jpeg')},
-    {id:4,name:'Squeeze',src:require('../assets/squeeze.jpeg')},
+    {id:1,name:'Cone',src:require('../assets/img/cone.jpeg')},
+    {id:2,name:'Brighams',src:require('../assets/img/brighams.png')},
+    {id:3,name:'Milkshake',src:require('../assets/img/milkshake.jpg')},
+    {id:4,name:'Squeeze',src:require('../assets/img/squeeze.jpeg')},
 ]
 
   return (
     <>
-      <div>
-        <h1>React Keys</h1>
+      <div className='ReactKeys'>
+        <h1 className='ReactKeysTitle'>React Keys</h1>
 
-        <div className='desserts-list-react-keys'>
+        <div className='DessertsListReactKeys'>
           {desserts.map((e, i)=> (
-            <div className='desserts' key={e.id}>
+            <div className='Desserts' key={e.id}>
               <p id={`label${i}`}>{e.name}</p>
-              <img id={`img${i}`} className={e.id} src={e.src} alt={e.name} />
+              <img id={`img${i}`} className={e.id} src={e.src} alt={e.name} height={'150'}/>
             </div>
           ))}
         </div>

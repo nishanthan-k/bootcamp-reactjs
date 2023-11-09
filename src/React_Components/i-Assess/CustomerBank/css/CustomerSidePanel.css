@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.CustomerBankName {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.CustomerSideMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem !important;
+}
+
+.CustomerSideMenuList {
+  margin-top: 5rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CustomerSideMenuListDashboard, .CustomerSideMenuListCustomer {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 1rem !important;
+}

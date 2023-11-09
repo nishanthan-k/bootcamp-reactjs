@@ -26,10 +26,10 @@ const VotersList = () => {
   })
   return (
     <>
-      <div id="content">
-        <h2 id="election-announcement">Election Announcements</h2>
+      <div className="VotersList" id="content">
+        <h2 className="VoterListTitle" id="election-announcement">Election Announcements</h2>
 
-        <p>
+        <p className="VoterListText">
           An election is a formal group decision-making process by which a
           population chooses an individual to hold public office.[1] Elections
           have been the usual mechanism by which modern representative democracy
@@ -40,17 +40,17 @@ const VotersList = () => {
           associations and corporations.
         </p>
 
-        <h2 id="eligible-vote">Eligible to Vote</h2>
-        <ul id="eligible-voters">
+        <h2 className="VoterListEligibleVote" id="eligible-vote">Eligible to Vote</h2>
+        <ul className="VoterListEligibleVoters" id="eligible-voters">
           {eligibleVoters.map((ele, i) => 
-            <li key={`voters${i}`} id={`voters${i}`}>{ele.name}</li>
+            <li key={`voters${i}`} className="VotersListListItems" id={`voters${i}`}>{ele.name}</li>
           )}
         </ul>
 
-        <h2 id="non-eligible-vote">Not Eligible to Vote</h2>
-        <ul id="non-eligible-voters">
+        <h2 className="VoterListNonEligibleVote"  id="non-eligible-vote">Not Eligible to Vote</h2>
+        <ul className="VoterListNonEligibleVoters" id="non-eligible-voters">
           {nonEligibleVoters.map((ele, i) => 
-            <li key={`voters${i}`} id={`voters${i}`}>{ele.name}</li>
+            <li key={`voters${i}`} className="VotersListListItems" id={`voters${i}`}>{ele.name}</li>
           )}
         </ul>
       </div>

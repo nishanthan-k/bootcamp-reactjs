@@ -1,15 +1,25 @@
-.desserts-list-react-keys {
+.ReactKeys {
+  padding: 4rem;
+}
+
+.ReactKeysTitle {
+  /* margin: 5rem !important; */
+  font-size: 1.5rem !important;
+}
+
+.DessertsListReactKeys {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 4.5rem !important;
   display: flex;
   justify-content: space-around;
 }
-.desserts {
-  width: 17rem;
-  padding: .3rem;
+
+.Desserts {
+  width: 20%;
+  height: 40vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border: 2px solid;
 }

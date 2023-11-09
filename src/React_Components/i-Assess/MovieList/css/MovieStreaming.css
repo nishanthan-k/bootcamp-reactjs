@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.MovieStreaming {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.MovieStreamingHeading {
+  text-align: left;
+  margin: 2rem !important;
+  font-size: 1.3rem;
+}
+
+.MovieStreamingList {
+  display: flex;
+  margin-left: 2rem  !important;
+  justify-content: flex-start;
+}
+
+.MovieStreamingPoster {
+  height: 300px;
+  width: 200;
+  margin-right: 7rem !important;
+}

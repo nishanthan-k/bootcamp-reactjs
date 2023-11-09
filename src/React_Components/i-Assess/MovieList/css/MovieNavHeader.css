@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.MovieNavHeader {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(72, 48, 190, .77);
+  color: white;
+}
+
+.MovieNavHeaderHeaderList{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.MovieNavHeaderNavListLinks {
+  color: white;
+  font-style: normal;
+}
+
+.MovieNavHeaderShowTime {
+  border: 2px solid white;
+  padding: 7px 7px;
+  font-weight: bold;
+}

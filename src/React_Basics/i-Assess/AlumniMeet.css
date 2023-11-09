@@ -1,14 +1,36 @@
-.table-alumni {
-  border: 1px solid;
-  border-collapse: collapse;
-
+.AlumniMeet {
+  padding: 1rem;
 }
 
-.table-alumni {
+.AlumniMeetTableItem, .AlumniMeetTable {
+  padding: .2rem;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.AlumniMeetTable{
   padding: .2rem 1rem;
   text-align: center;
 }
 
-h1, p {
-  margin-bottom: 1.5rem;
+.AlumniMeetTitle, .AlumniMeetText{
+  margin-bottom: 1.5rem !important;
+  text-align: left !important;
+  font-size: 2rem !important;
+}
+
+.AlumniMeetText{
+  font-size: 1rem !important;
+}
+
+.AlumniMeetTitleH2 {
+  font-size: 1.5rem !important;
+  text-align: left !important;
+
+}
+
+.AlumniMeetTitleH3 {
+  font-size: 1.2rem !important;
+  text-align: left !important;
+  margin-bottom: .5rem;
 }

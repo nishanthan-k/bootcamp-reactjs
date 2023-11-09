@@ -2,17 +2,18 @@
   box-sizing: border-box;
 }
 
-.coming-soon {
+.ComingSoon {
   padding: .5rem 2rem;
 }
 
-.section-title {
+.ComingSoonSectionTitle {
   font-weight: bold;
+  text-align: left;
   margin-bottom: .6rem;
 }
 
-.coming-soon-list {
-  margin: 0;
+.ComingSoonList {
+  margin-top: 1rem !important;
   padding: 1.3rem;
   list-style-type: none;
   display: flex;
@@ -23,8 +24,9 @@
   border-radius: 10px;
 }
 
-li {
-  font-style: italic;
+.ComingSoonListItem {
+  font-style: italic !important;
+  text-align: left;
   color: rgb(75, 74, 74);
   font-size: .9rem;
 }
