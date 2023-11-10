@@ -35,14 +35,18 @@ import HomeEssentials from "./React_Basics/i-Design/HomeEssentials";
 import WelcomePage from "./React_Basics/i-Design/WelcomePage";
 import VotersList from "./React_Basics/i-Assess/VotersList";
 import AlumniMeet from "./React_Basics/i-Assess/AlumniMeet";
-import ReactComponents from "./ReactComponents"
+import ReactComponents from "./ReactComponents";
 import HomeApp from "./React_Components/i-Design/MovieHomePage/src/HomeApp";
 import Course from "./React_Components/i-Design/Course/src/Course";
 import ParentChild from "./React_Components/i-Design/Parent_Child/src/ParentChild";
 import ReactKeys from "./React_Components/i-Design/ReactKeys/src/ReactKeys";
-import ConditionalRendering from "./React_Components/i-Design/ConditionalRendering/src/ConditionalRendering"
+import ConditionalRendering from "./React_Components/i-Design/ConditionalRendering/src/ConditionalRendering";
 import CustomerBank from "./React_Components/i-Assess/CustomerBank/src/CustomerBank";
-import MovieList from "./React_Components/i-Assess/MovieList/src/MovieList"
+import MovieList from "./React_Components/i-Assess/MovieList/src/MovieList";
+import ReactPropsState from "./ReactPropsState";
+import Cricket from "./React_Props_State/Cricket/src/Cricket";
+import ChildrenProperty from "./React_Props_State/ChildrenProperty/src/ChildrenProperty";
+import TicketBooking from "./React_Props_State/TicketBooking/src/TicketBooking"
 
 function App() {
   return (
@@ -51,6 +55,8 @@ function App() {
         <Switch>
           {/* Buttons  */}
           <Route exact path="/" component={Buttons} />
+
+          {/* ES6 Basics  */}
           <Route exact path="/ES6Basics" component={ES6Basics} />
           <Route exact path="/ES6Basics/Factorial" component={Factorial} />
           <Route exact path="/ES6Basics/Rest" component={Rest} />
@@ -66,6 +72,7 @@ function App() {
           <Route exact path="/ES6Basics/Filter1" component={Filter1} />
           <Route exact path="/ES6Basics/Sort1" component={Sort1} />
 
+          {/* ES6 Advanced  */}
           <Route exact path="/ES6Advanced" component={ES6Advanced} />
           <Route exact path="/ES6Advanced/Set" component={Set} />
           <Route exact path="/ES6Advanced/Promises" component={Promises} />
@@ -98,6 +105,11 @@ function App() {
           <Route exact path="/ReactComponents/CustomerBank" component={CustomerBank} />
           <Route exact path="/ReactComponents/MovieList" component={MovieList} />
 
+          {/* ReactPropsState  */}
+          <Route exact path="/ReactPropsState" component={ReactPropsState} />
+          <Route exact path="/ReactPropsState/Cricket" component={Cricket} />
+          <Route exact path="/ReactPropsState/ChildrenProperty" component={ChildrenProperty } />
+          <Route exact path="/ReactPropsState/TicketBooking" component={TicketBooking } />
         </Switch>
       </Router>
     </>

@@ -25,6 +25,9 @@ const Buttons = () => {
           <Link to="ReactComponents">
             <button onClick={reload}>React Components</button>
           </Link>
+          <Link to="ReactPropsState">
+            <button onClick={reload}>Props & State</button>
+          </Link>
         </div>
       </div>
     </>

@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.CricketHeader {
+  width: 100%;
+  height: 8vh;
+  background-color: #90d431;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CricketHeaderTitle {
+  font-size: 1.35rem !important;
+  color: white;
+}
+
+.CricketContent {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.CricketTeams{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.CricketScoreDetails {
+  width: 100%;
+  margin-top: 3rem !important;
+}
+
+.CricketScoreDetails h4 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}

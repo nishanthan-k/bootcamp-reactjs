@@ -41,16 +41,12 @@ const BooksAvailable = () => {
     if (status === "Return") {
       var arr = bookCount;
       console.log(typeof arr[index], typeof books[index].count);
-      // if (arr[index] < books[index].count) {
         arr[index] = arr[index] + 1;
         setBookCount((prev) => (prev = arr));
-      // }
     } else if (status === "Rent") {
       var arr = bookCount;
-      // if (arr[index] < books[index].count && arr[index] >= 0) {
         arr[index] = arr[index] - 1;
         setBookCount((prev) => (prev = arr));
-      // }
     }
   };
 
@@ -63,9 +59,6 @@ const BooksAvailable = () => {
         obj[ele] = bookCount[i];
       }
     });
-
-    // console.log(obj);
-    // Object.entries(obj).map(([x, y]) => console.log(`${x} : ${y}`));
   };
   return (
     <>
