@@ -40,6 +40,7 @@ import HomeApp from "./React_Components/i-Design/MovieHomePage/src/HomeApp";
 import Course from "./React_Components/i-Design/Course/src/Course";
 import ParentChild from "./React_Components/i-Design/Parent_Child/src/ParentChild";
 import ReactKeys from "./React_Components/i-Design/ReactKeys/src/ReactKeys";
+import ConditionalRendering from "./React_Components/i-Design/ConditionalRendering/src/ConditionalRendering"
 import CustomerBank from "./React_Components/i-Assess/CustomerBank/src/CustomerBank";
 import MovieList from "./React_Components/i-Assess/MovieList/src/MovieList"
 
@@ -93,6 +94,7 @@ function App() {
           <Route exact path="/ReactComponents/Course" component={Course} />
           <Route exact path="/ReactComponents/ParentChild" component={ParentChild} />
           <Route exact path="/ReactComponents/ReactKeys" component={ReactKeys} />
+          <Route exact path="/ReactComponents/ConditionalRendering" component={ConditionalRendering} />
           <Route exact path="/ReactComponents/CustomerBank" component={CustomerBank} />
           <Route exact path="/ReactComponents/MovieList" component={MovieList} />
 

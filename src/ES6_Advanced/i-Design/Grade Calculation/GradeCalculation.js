@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-// import CalculateGrade from './CalculateGrade';
+import CalculateGrade from './CalculateGrade';
 
 const GradeCalculation = () => {
   const [input, setInput] = useState('');
@@ -26,7 +26,7 @@ const GradeCalculation = () => {
       </form>
 
       {issendData && (
-         <callCalculate input={input} />
+         <CalculateGrade input={input} />
       )}
     </>
   )

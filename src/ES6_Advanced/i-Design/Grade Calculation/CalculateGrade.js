@@ -4,11 +4,24 @@ const CalculateGrade = (props) => {
   const [output, setOutput] = useState("");
   let arr = props.input.split(",");
   arr = arr.map(Number);
-  setOutput(Math.sum(arr) / arr.length >= 70 ? "Pass" : "Fail");
+  
+  
+  const updateOutput = () => {
+    const sum = arr.reduce((e, i) => e + i, 0);
+  
+    if (sum / arr.length >= 70) {
+      setOutput('Pass')
+    } else {
+      setOutput('Fail');
+    }
+  
+    return output;
+  }
+  
 
   return (
     <>
-      <div>Output: {output}</div>
+      <div>Output: {updateOutput}</div>
     </>
   );
 };

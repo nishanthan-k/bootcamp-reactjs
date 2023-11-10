@@ -30,9 +30,6 @@
 }
 
 .CustomerTableTable {
-  /* width: 90%;
-  margin-left: 10rem !important; */
-  /* background-color: red; */
   grid-row: 3 / 9;
   padding: 2rem;
   border-collapse: collapse;

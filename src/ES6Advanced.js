@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-// import { useHistory as history } from "react-router-dom/cjs/react-router-dom.min";
+import "./Buttons.css"
 
 function ES6Advanced() {
   const reload = () => {
@@ -10,7 +10,7 @@ function ES6Advanced() {
   
   return (
     <>
-      <div className="module_btns">
+      <div className="ModuleBtns">
         <Link to="/ES6Advanced/Set">
           <button onClick={reload}>Set</button>
         </Link>

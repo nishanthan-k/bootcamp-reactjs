@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import "./Buttons.css"
 
 function ES6Basics() {
   const reload = () => {
@@ -9,7 +10,7 @@ function ES6Basics() {
   
   return (
     <>
-      <div className="module_btns">
+      <div className="ModuleBtns">
         <Link to="/ES6Basics/Factorial">
           <button onClick={reload}>Factorial</button>
         </Link>

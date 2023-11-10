@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ConditionalRenderingH1 {
+  font-size: 2.5rem !important;
+  text-align: left;
+  margin: 5rem 5rem 3rem 6rem !important
+}
+
+.ConditionalRendering {
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 10rem 6rem 7rem !important;
+}
+
+.ConditionalRenderingReturn {
+  width: 17rem;
+  height: 5.3rem;
+  padding: .8rem;
+  background-color: #f2f2f2;
+  border: 1px solid #b2b2b2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+.InputField {
+  width: 95%;
+}
+
+input[type="text"]::placeholder {
+  text-align: left !important;
+}
+
+.InputFieldText {
+  height: 1.5rem;
+  width: 100%;
+  text-align: left;
+  padding-left: 3px ;
+}
+
+.SelectField {
+  width: 95%;
+}
+
+.SelectFieldSelect {
+  height: 1.5rem;
+  width: 100%;
+  text-align: left;
+  padding-left: 4px;
+}

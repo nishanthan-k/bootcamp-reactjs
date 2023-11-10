@@ -19,3 +19,29 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.ModuleBtns button {
+  height: max-content;
+  width: max-content;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.ModuleBtns  {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  height: max-content;
+  width: max-content;
+  padding: 2px 4px;
+}
+
+button:hover {
+  border: 2px solid;
+  background-color: lightgray;
+}
