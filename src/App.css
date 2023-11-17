@@ -29,4 +29,5 @@ option {
 
 input {
   text-align: left;
+  outline: none;
 }

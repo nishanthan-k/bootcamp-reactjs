@@ -54,6 +54,8 @@ import CourseDetails from "./React_Props_State/i-Assess/CourseDetails/src/Course
 import ReactLifeCycle from "./ReactLifeCycle";
 import DisplayJSON from "./ReactLifeCycle/i-Design/DisplayJSON/src/DisplayJSON";
 import MovieFilter from "./ReactLifeCycle/i-Design/MovieFilter/src/MovieFilter";
+import MovieSearch from "./ReactLifeCycle/i-Design/MovieSearch/src/MovieSearch";
+import ComponentDidMount from "./ReactLifeCycle/i-Design/ComponentDidMount/src/ComponentDidMount";
 
 function App() {
   return (
@@ -126,6 +128,8 @@ function App() {
           <Route exact path="/ReactLifeCycle" component={ReactLifeCycle}/>
           <Route exact path="/ReactLifeCycle/DisplayJSON" component={DisplayJSON}/>
           <Route exact path="/ReactLifeCycle/MovieFilter" component={MovieFilter}/>
+          <Route exact path="/ReactLifeCycle/MovieSearch" component={MovieSearch}/>
+          <Route exact path="/ReactLifeCycle/ComponentDidMount" component={ComponentDidMount}/>
         </Switch>
       </Router>
     </>
