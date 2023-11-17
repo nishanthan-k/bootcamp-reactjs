@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.TicketFormContent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+}
+
+.TicketFormH1 {
+  font-size: 2.3rem;
+  color: #7e7d7b;
+  padding-bottom: 1rem;
+}
+
+.TicketFormFields {
+  width: 60%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 5px 5px 15px #7e7d7b;
+  padding: 3rem 5rem 10rem 5rem;
+}
+
+.TicketFormForm {
+  width: 100%;
+}
+
+.TicketFormLabel {
+  color: #7e7d7b;
+}
+
+.TicketFormInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TicketFormInputField {
+  height: 2rem;
+  padding: 10px;
+}
+
+.TicketFormBtns {
+  width: 100%;
+  height: max-content;
+  padding: .5rem;
+  background-color: #f0f0f0;
+  border: 1px solid #b2b2b2;
+  color: #6c6b6c;
+}

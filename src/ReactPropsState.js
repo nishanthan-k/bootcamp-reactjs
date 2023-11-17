@@ -13,6 +13,18 @@ function ReactPropsState() {
         <Link to="/ReactPropsState/TicketBooking">
           <button>Ticket Booking</button>
         </Link>
+        <Link to="/ReactPropsState/ProtoTypes">
+          <button>Proto Types</button>
+        </Link>
+        <Link to="/ReactPropsState/QuantityOfItemPurchased">
+          <button>Item Purchased</button>
+        </Link>
+        <Link to="/ReactPropsState/CricketHockeyPlayers">
+          <button>Cricket Hockey</button>
+        </Link>
+        <Link to="/ReactPropsState/CourseDetails">
+          <button>Course Details</button>
+        </Link>
       </div>
     </>
   )

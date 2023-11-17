@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.DisplayJSON {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+
+.DisplayJSONH1 {
+  font-size: 2.125rem;
+}
+
+.DisplayJSON-MovieContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.DisplayJSON-Movie {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  padding: 1rem 9rem;
+  border: 1px solid white;
+  box-shadow: 5px 5px 15px lightgray;
+}

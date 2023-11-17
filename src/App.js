@@ -44,9 +44,16 @@ import ConditionalRendering from "./React_Components/i-Design/ConditionalRenderi
 import CustomerBank from "./React_Components/i-Assess/CustomerBank/src/CustomerBank";
 import MovieList from "./React_Components/i-Assess/MovieList/src/MovieList";
 import ReactPropsState from "./ReactPropsState";
-import Cricket from "./React_Props_State/Cricket/src/Cricket";
-import ChildrenProperty from "./React_Props_State/ChildrenProperty/src/ChildrenProperty";
-import TicketBooking from "./React_Props_State/TicketBooking/src/TicketBooking"
+import Cricket from "./React_Props_State/i-Design/Cricket/src/Cricket";
+import ChildrenProperty from "./React_Props_State/i-Design/ChildrenProperty/src/ChildrenProperty";
+import TicketBooking from "./React_Props_State/i-Design/TicketBooking/src/TicketBooking"
+import ProtoTypes from "./React_Props_State/i-Design/ProtoTypes/src/ProtoTypes";
+import QuantityOfItemPurchased from "./React_Props_State/i-Assess/QuantityOfItemPurchased/src/QuantityOfItemPurchased"
+import CricketHockeyPlayers from "./React_Props_State/i-Assess/CricketHockeyPlayers/src/CricketHockeyPlayers";
+import CourseDetails from "./React_Props_State/i-Assess/CourseDetails/src/CourseDetails";
+import ReactLifeCycle from "./ReactLifeCycle";
+import DisplayJSON from "./ReactLifeCycle/i-Design/DisplayJSON/src/DisplayJSON";
+import MovieFilter from "./ReactLifeCycle/i-Design/MovieFilter/src/MovieFilter";
 
 function App() {
   return (
@@ -109,7 +116,16 @@ function App() {
           <Route exact path="/ReactPropsState" component={ReactPropsState} />
           <Route exact path="/ReactPropsState/Cricket" component={Cricket} />
           <Route exact path="/ReactPropsState/ChildrenProperty" component={ChildrenProperty } />
-          <Route exact path="/ReactPropsState/TicketBooking" component={TicketBooking } />
+          <Route exact path="/ReactPropsState/TicketBooking" component={TicketBooking} />
+          <Route exact path="/ReactPropsState/ProtoTypes" component={ProtoTypes} />
+          <Route exact path="/ReactPropsState/QuantityOfItemPurchased" component={QuantityOfItemPurchased} />
+          <Route exact path="/ReactPropsState/CricketHockeyPlayers" component={CricketHockeyPlayers} />
+          <Route exact path="/ReactPropsState/CourseDetails" component={CourseDetails} />
+
+          {/* React LifeCycle */}
+          <Route exact path="/ReactLifeCycle" component={ReactLifeCycle}/>
+          <Route exact path="/ReactLifeCycle/DisplayJSON" component={DisplayJSON}/>
+          <Route exact path="/ReactLifeCycle/MovieFilter" component={MovieFilter}/>
         </Switch>
       </Router>
     </>

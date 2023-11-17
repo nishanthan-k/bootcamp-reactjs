@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.CourseCard {
+  width: 90%;
+  height: 85vh;
+  padding: 5px;
+  box-shadow: 5px 5px 15px rgb(163, 160, 160);
+  border: 1px solid none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.CourseCardEBox {
+  width: max-content;
+  padding: 5px;
+  text-align: left;
+  background-color: #ffc03d;
+  border-radius: 10px 0px 0px 0px;
+  font-size: 14px;
+  color: white;
+}
+
+.CourseCardContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.CourseCardTitle {
+  width: 95%;
+  height: 11vh;
+  color: white;
+  background-color: #552e89;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.courseId {
+  width: 95%;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #464e75;
+  color: white;
+}
+
+.courseIdText {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.courseIdNumber {
+  width: 100%;
+  background-color: #fe5979;
+}
+
+.CourseCardDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CourseCardDetailData {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.CourseCardDescription {
+  text-align: right
+}
+
+.CourseDetailData {
+  width: 80%;
+  text-align: right;
+}

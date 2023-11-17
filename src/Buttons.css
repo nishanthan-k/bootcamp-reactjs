@@ -38,6 +38,8 @@
 button {
   height: max-content;
   width: max-content;
+  height: 1.6rem;
+  width: 10rem;
   padding: 2px 4px;
 }
 

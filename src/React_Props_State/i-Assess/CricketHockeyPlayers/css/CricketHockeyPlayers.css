@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding-bottom: .5rem;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.ContainerPlayersList {
+  padding: .5rem 2rem;
+}
+
+.ContainerPlayers {
+  text-align: left;
+}
+
+.AboutGameContent {
+  text-align: left;
+  text-indent: 10px;
+}
+.ContainerH1 {
+  background-color: #00a2e3;
+  width: max-content;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
+.ContainerH2 {
+  background-color: #fb8ea1;
+  width: max-content;
+  padding: 5px;
+  font-size: 1rem
+}
+
+.ContainerH3 {
+  background-color: #fecfd5;
+  width: max-content;
+  padding: 5px;
+  font-size: .9rem
+}
+
+.ContainerH4 {
+  background-color: #ff8f2f;
+  width: max-content;
+  padding: 5px;
+  font-size: 1rem
+}
+
+.ContainerH1 {
+  background-color: #00a2e3;
+  width: max-content;
+  padding: 5px;
+  font-size: 1.3rem
+}
