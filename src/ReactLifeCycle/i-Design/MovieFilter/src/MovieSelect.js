@@ -118,11 +118,11 @@ const MovieSelect = (props) => {
     console.log("render movies.............");
     return (
       <div className="MovieFilter-FilterResult">
-        { movies.map((movie, index) => (
-          <div key={ `movie${index}` } className="">
-            <img src={ movie.src } alt={ movie.name } height="200" />
+        {movies.map((movie, index) => (
+          <div key={`movie${index}`} className="">
+            <img src={movie.src} alt={movie.name} height="200" />
           </div>
-        )) }
+        ))}
       </div>
     );
   };
@@ -204,91 +204,91 @@ const MovieSelect = (props) => {
         <div className="MovieFilter-FilterOption Prevent-text-Select">
           <ul className="MovieFilter-FilterOptionList">
             <li className="MovieFilter-FilterOptionListItems">
-              <p id="selectLanguage" onClick={ updateBool }>
+              <p id="selectLanguage" onClick={updateBool}>
                 Select Language
               </p>
-              { state.isSelectLanguage && (
+              {state.isSelectLanguage && (
                 <div className="MovieFilter-FilterOptionList-LanguageOption">
-                  { laguagesList.map((language) => (
+                  {laguagesList.map((language) => (
                     <div
-                      key={ language }
+                      key={language}
                       className="MovieFilter-FilterOptionList-Language MovieFilter-DropDownFilter"
                     >
                       <input
                         type="checkbox"
-                        value={ language }
-                        name={ language }
-                        onChange={ () =>
+                        value={language}
+                        name={language}
+                        onChange={() =>
                           handleFilterChange("Languages", language)
                         }
                       />
-                      <label htmlFor={ language }>{ language }</label>
+                      <label htmlFor={language}>{language}</label>
                     </div>
-                  )) }
+                  ))}
                 </div>
-              ) }
+              )}
             </li>
             <li className="MovieFilter-FilterOptionListItems">
-              <p id="selectGenre" onClick={ updateBool }>
+              <p id="selectGenre" onClick={updateBool}>
                 Select Genre
               </p>
-              { state.isSelectGenre && (
+              {state.isSelectGenre && (
                 <div className="MovieFilter-FilterOptionList-GenreOption">
-                  { genreList.map((genre) => (
+                  {genreList.map((genre) => (
                     <div
-                      key={ genre }
+                      key={genre}
                       className="MovieFilter-FilterOptionList-Genre MovieFilter-DropDownFilter"
                     >
                       <input
                         type="checkbox"
-                        value={ genre }
-                        name={ genre }
-                        onChange={ () => handleFilterChange("Genre", genre) }
+                        value={genre}
+                        name={genre}
+                        onChange={() => handleFilterChange("Genre", genre)}
                       />
-                      <label htmlFor={ genre }>{ genre }</label>
+                      <label htmlFor={genre}>{genre}</label>
                     </div>
-                  )) }
+                  ))}
                 </div>
-              ) }
+              )}
             </li>
             <li className="MovieFilter-FilterOptionListItems">
-              <p id="selectFormat" onClick={ updateBool }>
+              <p id="selectFormat" onClick={updateBool}>
                 Select Format
               </p>
-              {/* {console.log(state.isSelectFormat, 'selectFormat')} */ }
-              { state.isSelectFormat && (
+              {/* {console.log(state.isSelectFormat, 'selectFormat')} */}
+              {state.isSelectFormat && (
                 <div className="MovieFilter-FilterOptionList-FormatOption">
-                  { formatList.map((format) => (
+                  {formatList.map((format) => (
                     <div
-                      key={ format }
+                      key={format}
                       className="MovieFilter-FilterOptionList-Format MovieFilter-DropDownFilter"
                     >
                       <input
                         type="checkbox"
-                        value={ format }
-                        name={ format }
-                        onChange={ () => handleFilterChange("Format", format) }
+                        value={format}
+                        name={format}
+                        onChange={() => handleFilterChange("Format", format)}
                       />
-                      <label htmlFor={ format }>{ format }</label>
+                      <label htmlFor={format}>{format}</label>
                     </div>
-                  )) }
+                  ))}
                 </div>
-              ) }
+              )}
             </li>
           </ul>
         </div>
         <div className="MovieFilter-FilterMovie">
-          { state.changesMade === 0 ? (
-              <div className="MovieFilter-FilterResult">
-                { nowShowing.map((movie, index) => (
-                  <div key={ `movie${index}` } className="">
-                    <img src={ movie.src } alt={ movie.name } height="200" />
-                  </div>
-                )) }
-              </div>
-            ) : (
-              RenderMovies()
-            )
+          {state.changesMade === 0 ? (
+            <div className="MovieFilter-FilterResult">
+              {nowShowing.map((movie, index) => (
+                <div key={`movie${index}`} className="">
+                  <img src={movie.src} alt={movie.name} height="200" />
+                </div>
+              ))}
+            </div>
+          ) : (
+            RenderMovies()
+          )
           }
         </div>
       </div>

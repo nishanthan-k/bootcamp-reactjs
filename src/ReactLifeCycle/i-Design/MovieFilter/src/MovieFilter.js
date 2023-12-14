@@ -1,7 +1,7 @@
 import React from 'react'
 import MovieHeader from './MovieHeader'
 
-const MovieFilter = () => {
+const Movies = () => {
   
   return (
     <>
@@ -12,4 +12,4 @@ const MovieFilter = () => {
   )
 }
 
-export default MovieFilter
+export default Movies

@@ -17,6 +17,9 @@ function ReactLifeCycle() {
         <Link to="/ReactLifeCycle/MovieFilter">
           <button onClick={reload}>Movie Filter</button>
         </Link>
+        <Link to="/ReactLifeCycle/Movies">
+          <button onClick={reload}>Movies</button>
+        </Link>
         <Link to="/ReactLifeCycle/MovieSearch">
           <button onClick={reload}>Movie Search</button>
         </Link>
