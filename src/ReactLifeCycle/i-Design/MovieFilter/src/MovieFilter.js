@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../css/MovieFilter.css";
 import MovieResult from "./MovieResult";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const MovieFilter = () => {
   const [selectLanguage, setSelectLanguage] = useState(false);
@@ -75,7 +77,8 @@ const MovieFilter = () => {
               className="MovieFilter-Filter-Name"
               onClick={handleLanguageChange}
             >
-              Select Language
+              <FontAwesomeIcon icon={faAngleDown} className="dropDownIcon" />
+              <span>Select Language</span>
             </p>
             {selectLanguage && (
               <div className="MovieFilter-Filter-LabelDiv">
@@ -120,7 +123,8 @@ const MovieFilter = () => {
               className="MovieFilter-Filter-Name"
               onClick={handleGenreChange}
             >
-              Select Genre
+              <FontAwesomeIcon icon={faAngleDown} className="dropDownIcon" />
+              <span>Select Genre</span>
             </p>
             {selectGenre && (
               <div className="MovieFilter-Filter-LabelDiv">
@@ -187,7 +191,8 @@ const MovieFilter = () => {
               className="MovieFilter-Filter-Name"
               onClick={handleFormatChange}
             >
-              Select Format
+              <FontAwesomeIcon icon={faAngleDown} className="dropDownIcon" />
+              <span>Select Format</span>
             </p>
             {selectFormat && (
               <div className="MovieFilter-Filter-LabelDiv">

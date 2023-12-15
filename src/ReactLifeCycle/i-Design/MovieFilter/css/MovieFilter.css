@@ -12,7 +12,7 @@
 .MovieFilter-Options {
   width: 100vw;
   background-color: lightgray;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
   position: sticky;
   top: 0;
 }
@@ -29,12 +29,8 @@
   cursor: pointer;
 }
 
-.MovieFilter-List>li>a {
-  text-decoration: none;
-}
-
-.MovieFilter-List>li:active {
-  color: red;
+.MovieFilter-List>li:hover {
+  color: rgb(132, 130, 130);
 }
 
 .MovieFilter-Filters {
@@ -60,6 +56,13 @@
 
 .MovieFilter-Filter-Name {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dropDownIcon {
+  padding-top: 3px;
 }
 
 .MovieFilter-Filter-LabelDiv {
