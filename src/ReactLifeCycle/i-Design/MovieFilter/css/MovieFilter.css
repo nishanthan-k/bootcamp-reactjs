@@ -12,7 +12,6 @@
 .MovieFilter-Options {
   width: 100vw;
   background-color: lightgray;
-  /* border-bottom: 1px solid; */
   padding: 0 2rem;
   position: sticky;
   top: 0;
@@ -52,7 +51,6 @@
 }
 
 .MovieFilter-Result-Container {
-  background-color: yellow;
   width: 80vw;
 }
 

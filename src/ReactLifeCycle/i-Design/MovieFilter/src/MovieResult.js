@@ -4,13 +4,17 @@ import { nowShowing, comingSoon, exclusive } from './movieData';
 
 const MovieResult = (props) => {
   const [filteredMovies, setFilteredMovies] = useState([]);
-  
+
   useEffect(() => {
     let moviesToDisplay = [];
 
-    props.category.map((categ) => {
-      let temp = categ === "Now Showing" ? moviesToDisplay = [...nowShowing] : categ === "Coming Soon" ? moviesToDisplay.push(...comingSoon) : moviesToDisplay.push(...exclusive);
-    })
+    if (props.category.length !== 0) {
+      props.category.map((categ) => {
+        let temp = categ === "Now Showing" ? moviesToDisplay = [...nowShowing] : categ === "Coming Soon" ? moviesToDisplay.push(...comingSoon) : moviesToDisplay.push(...exclusive);
+      })
+    } else {
+      moviesToDisplay = [...nowShowing];
+    }
 
     if (props.language.length !== 0) {
       moviesToDisplay = moviesToDisplay.filter((movie) => props.language.includes(movie.language));
@@ -34,7 +38,7 @@ const MovieResult = (props) => {
     <>
       <div className="MovieResult">
         {filteredMovies.map((movie, index) => (
-          <img src={movie.src} key={index} id={index} width={250} ></img>
+          <img src={movie.src} key={index} id={index} className='MovieImg' width={250} ></img>
         ))}
       </div>
     </>

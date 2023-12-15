@@ -1,3 +1,4 @@
+import React from 'react'
 import { Route, Switch } from "react-router-dom/cjs/react-router-dom.min";
 import { BrowserRouter as Router } from "react-router-dom/cjs/react-router-dom.min";
 import "./App.css";
@@ -56,7 +57,6 @@ import DisplayJSON from "./ReactLifeCycle/i-Design/DisplayJSON/src/DisplayJSON";
 import MovieFilter from "./ReactLifeCycle/i-Design/MovieFilter/src/Movies";
 import MovieSearch from "./ReactLifeCycle/i-Design/MovieSearch/src/MovieSearch";
 import ComponentDidMount from "./ReactLifeCycle/i-Design/ComponentDidMount/src/ComponentDidMount";
-import Movies from "./components/Movies/src/Movies"
 
 function App() {
   return (
@@ -131,7 +131,6 @@ function App() {
           <Route exact path="/ReactLifeCycle/MovieFilter" component={MovieFilter}/>
           <Route exact path="/ReactLifeCycle/MovieSearch" component={MovieSearch}/>
           <Route exact path="/ReactLifeCycle/ComponentDidMount" component={ComponentDidMount}/>
-          <Route exact path="/ReactLifeCycle/Movies" component={Movies}/>
         </Switch>
       </Router>
     </>

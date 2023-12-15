@@ -13,3 +13,7 @@
   align-items: flex-start;
   gap: 2rem;
 }
+
+.MovieImg {
+  border-radius: 20px;
+}
