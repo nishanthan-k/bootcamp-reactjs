@@ -38,12 +38,11 @@
 button {
   height: max-content;
   width: max-content;
-  height: 1.6rem;
-  width: 10rem;
-  padding: 2px 4px;
+  padding: .2rem 1rem;
 }
 
 button:hover {
-  border: 2px solid;
+  border: 1px solid;
+  border-radius: 5px;
   background-color: lightgray;
-}
+} 

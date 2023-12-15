@@ -38,7 +38,7 @@ const MovieResult = (props) => {
     <>
       <div className="MovieResult">
         {filteredMovies.map((movie, index) => (
-          <img src={movie.src} key={index} id={index} className='MovieImg' width={250} ></img>
+          <img src={movie.src} key={index} id={index} className='MovieImg' width={200} ></img>
         ))}
       </div>
     </>
