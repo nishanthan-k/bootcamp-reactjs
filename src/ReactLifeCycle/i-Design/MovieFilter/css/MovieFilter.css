@@ -1,6 +1,75 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+.MovieFilter {
+  display: flex;
+  flex-direction: column;
+}
+
+.MovieFilter-Options {
+  width: 100vw;
+  background-color: lightgray;
+  /* border-bottom: 1px solid; */
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.MovieFilter-List {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.MovieFilter-List>li {
+  cursor: pointer;
+}
+
+.MovieFilter-List>li>a {
+  text-decoration: none;
+}
+
+.MovieFilter-List>li:active {
+  color: red;
+}
+
+.MovieFilter-Filters {
+  display: flex;
+}
+
+.MovieFilter-Filter-Container {
+  width: 20vw;
+  height: 83vh;
+  padding: 1rem 0;
+  border: 2px solid;
+  position: sticky;
+  top: 3rem;
+}
+
+.MovieFilter-Result-Container {
+  background-color: yellow;
+  width: 80vw;
+}
+
+.MovieFilter-Filter-List {
+  padding-top: 1rem;
+}
+
+.MovieFilter-Filter-Name {
+  cursor: pointer;
+}
+
+.MovieFilter-Filter-LabelDiv {
+  padding-top: 1rem;
+}
+
+.MovieFilter-Filter-Label {
+  display: flex;
+  padding-left: 7rem;
+  gap: 10px;
+}

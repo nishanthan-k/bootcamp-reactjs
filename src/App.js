@@ -53,7 +53,7 @@ import CricketHockeyPlayers from "./React_Props_State/i-Assess/CricketHockeyPlay
 import CourseDetails from "./React_Props_State/i-Assess/CourseDetails/src/CourseDetails";
 import ReactLifeCycle from "./ReactLifeCycle";
 import DisplayJSON from "./ReactLifeCycle/i-Design/DisplayJSON/src/DisplayJSON";
-import MovieFilter from "./ReactLifeCycle/i-Design/MovieFilter/src/MovieFilter";
+import MovieFilter from "./ReactLifeCycle/i-Design/MovieFilter/src/Movies";
 import MovieSearch from "./ReactLifeCycle/i-Design/MovieSearch/src/MovieSearch";
 import ComponentDidMount from "./ReactLifeCycle/i-Design/ComponentDidMount/src/ComponentDidMount";
 import Movies from "./components/Movies/src/Movies"
