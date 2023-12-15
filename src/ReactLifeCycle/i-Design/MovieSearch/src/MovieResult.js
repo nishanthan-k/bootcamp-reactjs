@@ -28,9 +28,14 @@ const MovieResult = (props) => {
       moviesToDisplay = moviesToDisplay.filter((movie) => props.format.includes(movie.format));
     }
 
+
+    if (props.searchMovie !== "") {
+      console.log(props.searchMovie)
+      moviesToDisplay = moviesToDisplay.filter((movie) => (movie.name.toLowerCase()).indexOf(props.searchMovie.toLowerCase()) === 0)
+    }
+
     setFilteredMovies(moviesToDisplay);
   }, [props.category, props.language, props.genre, props.format, props.searchMovie])
-
 
   return (
     <>

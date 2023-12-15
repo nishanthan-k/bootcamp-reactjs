@@ -11,53 +11,33 @@
   user-select: none;
 }
 
-.header {
-  height: max-content;
-  width: 100%;
+.MovieHeader-Header {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgba(72, 48, 190, 0.77);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: rgba(72, 48, 190, 0.77);
-  color: white;
+  padding: 0 3rem;
 }
 
-.header-list {
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-list-links {
-  color: white;
-  font-style: normal;
-}
-
-.show-time {
+.MovieHeader-Logo {
+  width: max-content;
+  height: max-content;
+  padding: .5rem;
   border: 2px solid white;
-  padding: 7px 7px;
+  color: white;
   font-weight: bold;
 }
 
-.MovieFilter-FilterCategory {
-  height: max-content;
-  width: 100%;
+.MovieHeader-List {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 3.3rem;
-  background-color: #dededc;
+  list-style: none;
+  gap: 15px;
+  color: white;
 }
 
-.FilteCategory-List {
-  list-style-type: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.FilterCategory-ListItems a {
-  font-size: medium;
-  text-decoration: none;
-  color: black;
+li:hover {
+  cursor: pointer;
+  color: rgb(206, 202, 202);
 }

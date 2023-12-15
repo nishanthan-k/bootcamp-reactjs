@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.MovieResult {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.MovieImg {
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.MovieImg:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 15px;
+}

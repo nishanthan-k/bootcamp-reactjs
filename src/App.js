@@ -55,7 +55,7 @@ import CourseDetails from "./React_Props_State/i-Assess/CourseDetails/src/Course
 import ReactLifeCycle from "./ReactLifeCycle";
 import DisplayJSON from "./ReactLifeCycle/i-Design/DisplayJSON/src/DisplayJSON";
 import MovieFilter from "./ReactLifeCycle/i-Design/MovieFilter/src/Movies";
-import MovieSearch from "./ReactLifeCycle/i-Design/MovieSearch/src/MovieSearch";
+import MovieSearch from "./ReactLifeCycle/i-Design/MovieSearch/src/Movies";
 import ComponentDidMount from "./ReactLifeCycle/i-Design/ComponentDidMount/src/ComponentDidMount";
 
 function App() {
