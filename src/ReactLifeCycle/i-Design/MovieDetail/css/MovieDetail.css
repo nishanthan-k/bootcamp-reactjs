@@ -1,0 +1,290 @@
+.MovieDetail {
+  width: 100vw;
+  height: 83vh;
+  background-color: rgb(247, 241, 241);
+  position: relative;
+}
+
+.movieBgDark {
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+}
+
+.movieBgLight {
+  width: 100%;
+  height: 10vh;
+  background-color: lightgray;
+}
+
+.backArrow {
+  color: lightgray;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+}
+
+.backArrow:hover {
+  cursor: pointer;
+}
+
+.movieDetail-Container {
+  background-color: red;
+  position: relative;
+}
+
+.MovieDetail-Detail {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  display: flex;
+}
+
+.MovieDetail-Desc {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.MovieDetail-TicketDesc {
+  display: flex;
+  gap: 15px;
+}
+
+.movieName {
+  color: white;
+}
+
+.movieOptions {
+  color: gray;
+  text-decoration: none;
+}
+
+.movieOptions:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.visited {
+  color: blue;
+}
+
+.MovieDetail-Synopsis {
+  padding: 3rem 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.MovieDetail-Synopsis > p {
+  text-align: left;
+  font-size: 16px;
+}
+
+.MovieDetail-SelectDetails {
+  padding: 3rem 4rem 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.MovieDetail-Select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.MovieDetail-Select > select, input {
+  width: 200px;
+  height: 30px;
+}
+
+.MovieDetail-Select > input {
+  padding-left: 5px;
+}
+
+.viewTicketBtn {
+  background-color: rgba(255, 217, 0, 0.911);
+  padding: 20px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.viewTicketBtn:hover {
+  background-color: rgba(255, 217, 0, 0.911);
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+
+.MovieDetail-TicketDetails {
+  padding: 4rem 4rem 0;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.MovieDetail-ShowTimings {
+  display: flex;
+  gap: 15px;
+}
+
+.movie-timing {
+  border: 1px solid gray;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.movie-timing.red {
+  color: red;
+}
+
+.movie-timing.yellow {
+  color: #dba40f;
+}
+
+.movie-timing.green {
+  color: green;
+}
+
+.movie-timing:hover {
+  cursor: pointer;
+}
+
+.MovieDetail-MovieRate {
+  background-color: gray;
+  position: absolute;
+  padding: 4px 5px;
+  top: 1rem;
+}
+
+.MovieDetail-MovieRate > p {
+  font-size: 14px;
+}
+
+.confirm-booking {
+  width: 350px;
+  position: relative;
+  top: -60%;
+  left: 40%;
+  /* width: 25vw; */
+  height: 45vh;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+.booking-header {
+  height: 25%;
+  background-color: rgba(72, 48, 190, 0.77);;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.close-icon {
+  font-size: 1.5rem;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+}
+
+.confirm-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.movie-desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-date-name {
+  display: flex;
+  gap: 10px;
+}
+
+.movie-booking-date {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.booking-movie-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(105, 103, 103);
+}
+
+.movie-ticket-input {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.movie-user-input {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.movie-user-input > input {
+  width: 60px;
+  padding: 5px;
+}
+
+
+.cofirmTicketBtn {
+  background-color: rgba(255, 217, 0, 0.911);
+  padding: 20px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.cofirmTicketBtn:hover {
+  background-color: rgba(255, 217, 0, 0.911);
+  border: none;
+  outline: none;
+}
+
+.MovieDetail-ShowDetails {
+  position: relative;
+}
+
+.movie-booked {
+  position: absolute;
+  top: 1.5rem;
+  right: 6rem;
+  border: 1px solid;
+  padding: 2rem 1rem;
+}
+
+.movie-booked-details{
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.movie-booked-details > p {
+  font-size: 14px; 
+}

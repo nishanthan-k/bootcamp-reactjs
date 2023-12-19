@@ -1,0 +1,31 @@
+.GetDerivedStatsFromProps-Container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25vh;
+}
+
+.GetDerivedStatsFromProps {
+  width: max-content;
+  padding: 2rem 5rem;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.GetDerivedStatsFromProps-ColorInput {
+  display: flex;
+  gap: 10px;
+}
+
+.GetDerivedStatsFromProps-ColorBox {
+  width: 300px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}

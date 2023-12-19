@@ -57,6 +57,8 @@ import DisplayJSON from "./ReactLifeCycle/i-Design/DisplayJSON/src/DisplayJSON";
 import MovieFilter from "./ReactLifeCycle/i-Design/MovieFilter/src/Movies";
 import MovieSearch from "./ReactLifeCycle/i-Design/MovieSearch/src/Movies";
 import ComponentDidMount from "./ReactLifeCycle/i-Design/ComponentDidMount/src/ComponentDidMount";
+import MovieDetail from './ReactLifeCycle/i-Design/MovieDetail/src/Movies';
+import GetDerivedStatsFromProps from './ReactLifeCycle/i-Design/getDerivedStatsFromProps/src/GetDerivedStatsFromProps';
 
 function App() {
   return (
@@ -130,7 +132,9 @@ function App() {
           <Route exact path="/ReactLifeCycle/DisplayJSON" component={DisplayJSON}/>
           <Route exact path="/ReactLifeCycle/MovieFilter" component={MovieFilter}/>
           <Route exact path="/ReactLifeCycle/MovieSearch" component={MovieSearch}/>
+          <Route exact path="/ReactLifeCycle/MovieDetail" component={MovieDetail}/>
           <Route exact path="/ReactLifeCycle/ComponentDidMount" component={ComponentDidMount}/>
+          <Route exact path="/ReactLifeCycle/GetDerivedStatsFromProps" component={GetDerivedStatsFromProps}/>
         </Switch>
       </Router>
     </>

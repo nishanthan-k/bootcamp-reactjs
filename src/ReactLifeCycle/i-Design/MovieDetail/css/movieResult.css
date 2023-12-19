@@ -4,9 +4,9 @@
   padding: 0;
 }
 
-.MovieFilter-MovieResult {
-  width: 100%;
-  padding: 2rem 4rem;
+.MovieDetail-MovieResult {
+  width: 120vw;
+  padding: 2rem 20rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;

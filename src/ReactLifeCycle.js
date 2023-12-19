@@ -20,8 +20,14 @@ function ReactLifeCycle() {
         <Link to="/ReactLifeCycle/MovieSearch">
           <button onClick={reload}>Movie Search</button>
         </Link>
+        <Link to="/ReactLifeCycle/MovieDetail">
+          <button onClick={reload}>Movie Detail</button>
+        </Link>
         <Link to="/ReactLifeCycle/ComponentDidMount">
           <button onClick={reload}>ComponentDidMount</button>
+        </Link>
+        <Link to="/ReactLifeCycle/GetDerivedStatsFromProps">
+          <button onClick={reload}>GetDerivedStatsFromProps</button>
         </Link>
       </div>
     </>

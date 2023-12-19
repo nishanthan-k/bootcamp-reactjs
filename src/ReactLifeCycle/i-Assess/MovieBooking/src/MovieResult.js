@@ -28,15 +28,20 @@ const MovieResult = (props) => {
       moviesToDisplay = moviesToDisplay.filter((movie) => props.format.includes(movie.format));
     }
 
+
+    if (props.searchMovie !== "") {
+      console.log(props.searchMovie)
+      moviesToDisplay = moviesToDisplay.filter((movie) => (movie.name.toLowerCase()).indexOf(props.searchMovie.toLowerCase()) === 0)
+    }
+
     setFilteredMovies(moviesToDisplay);
   }, [props.category, props.language, props.genre, props.format, props.searchMovie])
 
-
   return (
     <>
-      <div className="MovieFilter-MovieResult">
+      <div className="MovieResult">
         {filteredMovies.map((movie, index) => (
-          <img src={movie.src} alt={movie.name} key={index} id={index} className='MovieImg' width={200} ></img>
+          <img src={movie.src} key={index} id={index} className='MovieImg' width={200} ></img>
         ))}
       </div>
     </>
