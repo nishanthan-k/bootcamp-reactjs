@@ -62,27 +62,27 @@ const MovieFilter = () => {
 
   return (
     <div className="MovieFilter">
-      <div className="MovieFilter-Options">
-        <ul className="MovieFilter-List">
+      <div className="MovieFilter-MovieFilter-Options">
+        <ul className="MovieFilter-MovieFilter-List">
           <li onClick={() => { updateFilters("category", "Now Showing") }}>Now Showing</li>
           <li onClick={() => { updateFilters("category", "Coming Soon") }}>Coming Soon</li>
           <li onClick={() => { updateFilters("category", "Exclusive") }}>Exclusive</li>
         </ul>
       </div>
 
-      <div className="MovieFilter-Filters">
-        <div className="MovieFilter-Filter-Container">
-          <div className="MovieFilter-Filter-List">
+      <div className="MovieFilter-MovieFilter-Filters">
+        <div className="MovieFilter-MovieFilter-Filter-Container">
+          <div className="MovieFilter-MovieFilter-Filter-List">
             <p
-              className="MovieFilter-Filter-Name"
+              className="MovieFilter-MovieFilter-Filter-Name"
               onClick={handleLanguageChange}
             >
               <FontAwesomeIcon icon={faAngleDown} className="dropDownIcon" />
               <span>Select Language</span>
             </p>
             {selectLanguage && (
-              <div className="MovieFilter-Filter-LabelDiv">
-                <label htmlFor="Tamil" className="MovieFilter-Filter-Label">
+              <div className="MovieFilter-MovieFilter-Filter-LabelDiv">
+                <label htmlFor="Tamil" className="MovieFilter-MovieFilter-Filter-Label">
                   <input
                     type="checkbox"
                     value="Tamil"
@@ -93,7 +93,7 @@ const MovieFilter = () => {
                   <span>Tamil</span>
                 </label>
 
-                <label htmlFor="English" className="MovieFilter-Filter-Label">
+                <label htmlFor="English" className="MovieFilter-MovieFilter-Filter-Label">
                   <input
                     type="checkbox"
                     value="English"
@@ -104,7 +104,7 @@ const MovieFilter = () => {
                   <span>English</span>
                 </label>
 
-                <label htmlFor="Hindi" className="MovieFilter-Filter-Label">
+                <label htmlFor="Hindi" className="MovieFilter-MovieFilter-Filter-Label">
                   <input
                     type="checkbox"
                     value="Hindi"
@@ -118,17 +118,17 @@ const MovieFilter = () => {
             )}
           </div>
 
-          <div className="MovieFilter-Filter-List">
+          <div className="MovieFilter-MovieFilter-Filter-List">
             <p
-              className="MovieFilter-Filter-Name"
+              className="MovieFilter-MovieFilter-Filter-Name"
               onClick={handleGenreChange}
             >
               <FontAwesomeIcon icon={faAngleDown} className="dropDownIcon" />
               <span>Select Genre</span>
             </p>
             {selectGenre && (
-              <div className="MovieFilter-Filter-LabelDiv">
-                <label htmlFor="Action" className="MovieFilter-Filter-Label">
+              <div className="MovieFilter-MovieFilter-Filter-LabelDiv">
+                <label htmlFor="Action" className="MovieFilter-MovieFilter-Filter-Label">
                   <input
                     type="checkbox"
                     value="Action"
@@ -139,7 +139,7 @@ const MovieFilter = () => {
                   <span>Action</span>
                 </label>
 
-                <label htmlFor="Comedy" className="MovieFilter-Filter-Label">
+                <label htmlFor="Comedy" className="MovieFilter-MovieFilter-Filter-Label">
                   <input
                     type="checkbox"
                     value="Comedy"
@@ -150,7 +150,7 @@ const MovieFilter = () => {
                   <span>Comedy</span>
                 </label>
 
-                <label htmlFor="Horror" className="MovieFilter-Filter-Label">
+                <label htmlFor="Horror" className="MovieFilter-MovieFilter-Filter-Label">
                   <input
                     type="checkbox"
                     value="Horror"
@@ -161,7 +161,7 @@ const MovieFilter = () => {
                   <span>Horror</span>
                 </label>
 
-                <label htmlFor="Commercial" className="MovieFilter-Filter-Label">
+                <label htmlFor="Commercial" className="MovieFilter-MovieFilter-Filter-Label">
                   <input
                     type="checkbox"
                     value="Commercial"
@@ -172,7 +172,7 @@ const MovieFilter = () => {
                   <span>Commercial</span>
                 </label>
 
-                <label htmlFor="Disney" className="MovieFilter-Filter-Label">
+                <label htmlFor="Disney" className="MovieFilter-MovieFilter-Filter-Label">
                   <input
                     type="checkbox"
                     value="Disney"
@@ -186,17 +186,17 @@ const MovieFilter = () => {
             )}
           </div>
 
-          <div className="MovieFilter-Filter-List">
+          <div className="MovieFilter-MovieFilter-Filter-List">
             <p
-              className="MovieFilter-Filter-Name"
+              className="MovieFilter-MovieFilter-Filter-Name"
               onClick={handleFormatChange}
             >
               <FontAwesomeIcon icon={faAngleDown} className="dropDownIcon" />
               <span>Select Format</span>
             </p>
             {selectFormat && (
-              <div className="MovieFilter-Filter-LabelDiv">
-                <label htmlFor="2D" className="MovieFilter-Filter-Label">
+              <div className="MovieFilter-MovieFilter-Filter-LabelDiv">
+                <label htmlFor="2D" className="MovieFilter-MovieFilter-Filter-Label">
                   <input
                     type="checkbox"
                     value="2D"
@@ -207,7 +207,7 @@ const MovieFilter = () => {
                   <span>2D</span>
                 </label>
 
-                <label htmlFor="3D" className="MovieFilter-Filter-Label">
+                <label htmlFor="3D" className="MovieFilter-MovieFilter-Filter-Label">
                   <input
                     type="checkbox"
                     value="3D"
@@ -222,7 +222,7 @@ const MovieFilter = () => {
           </div>
         </div>
 
-        <div className="MovieFilter-Result-Container">
+        <div className="MovieFilter-MovieFilter-Result-Container">
           <MovieResult category={filterCategory} language={languages} genre={genres} format={formats} />
         </div>
 

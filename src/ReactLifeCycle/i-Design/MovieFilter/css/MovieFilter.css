@@ -4,12 +4,12 @@
   padding: 0;
 }
 
-.MovieFilter {
+.MovieFilter-MovieFilter {
   display: flex;
   flex-direction: column;
 }
 
-.MovieFilter-Options {
+.MovieFilter-MovieFilter-Options {
   width: 100vw;
   background-color: lightgray;
   padding: 0 2.5rem;
@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.MovieFilter-List {
+.MovieFilter-MovieFilter-List {
   height: 7vh;
   display: flex;
   align-items: center;
@@ -28,19 +28,19 @@
   list-style: none;
 }
 
-.MovieFilter-List>li {
+.MovieFilter-MovieFilter-List>li {
   cursor: pointer;
 }
 
-.MovieFilter-List>li:hover {
+.MovieFilter-MovieFilter-List>li:hover {
   color: rgb(132, 130, 130);
 }
 
-.MovieFilter-Filters {
+.MovieFilter-MovieFilter-Filters {
   display: flex;
 }
 
-.MovieFilter-Filter-Container {
+.MovieFilter-MovieFilter-Filter-Container {
   width: 20vw;
   height: 83vh;
   padding: 1rem 0;
@@ -49,15 +49,15 @@
   top: 3rem;
 }
 
-.MovieFilter-Result-Container {
+.MovieFilter-MovieFilter-Result-Container {
   width: 80vw;
 }
 
-.MovieFilter-Filter-List {
+.MovieFilter-MovieFilter-Filter-List {
   padding-top: 1rem;
 }
 
-.MovieFilter-Filter-Name {
+.MovieFilter-MovieFilter-Filter-Name {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -68,11 +68,12 @@
   padding-top: 3px;
 }
 
-.MovieFilter-Filter-LabelDiv {
+.MovieFilter-MovieFilter-Filter-LabelDiv {
   padding-top: 1rem;
+  width: 10vw;
 }
 
-.MovieFilter-Filter-Label {
+.MovieFilter-MovieFilter-Filter-Label {
   display: flex;
   padding-left: 7rem;
   gap: 10px;
