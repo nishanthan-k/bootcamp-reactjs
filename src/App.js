@@ -61,6 +61,12 @@ import MovieDetail from './ReactLifeCycle/i-Design/MovieDetail/src/Movies';
 import GetDerivedStatsFromProps from './ReactLifeCycle/i-Design/getDerivedStatsFromProps/src/GetDerivedStatsFromProps';
 import MovieBooking from "./ReactLifeCycle/i-Design/MovieDetail/src/Movies"
 import Quiz from './ReactLifeCycle/i-Assess/QuizAttempt/src/Quiz';
+import ReactFrom from "./ReactForm"
+import LoginForm from "./React_Forms/LoginForm/src/LoginForm"
+import AdminView from './React_Forms/LoginForm/src/AdminView';
+import UserView from './React_Forms/LoginForm/src/UserView';
+import LoginLogOut from './React_Forms/LoginLogout/src/LoginLogOut';
+
 
 function App() {
   return (
@@ -139,6 +145,13 @@ function App() {
           <Route exact path="/ReactLifeCycle/GetDerivedStatsFromProps" component={GetDerivedStatsFromProps}/>
           <Route exact path="/ReactLifeCycle/MovieBooking" component={MovieBooking}/>
           <Route exact path="/ReactLifeCycle/Quiz" component={Quiz}/>
+
+          {/* {React Froms} */}
+          <Route exact path="/ReactForms" component={ReactFrom} />
+          <Route exact path="/ReactForms/LoginForm" component={LoginForm}/>
+          <Route exact path="/ReactForms/LoginForm/AdminView" component={AdminView}/>
+          <Route exact path="/ReactForms/LoginForm/UserView" component={UserView}/>
+          <Route exact path="/ReactForms/LoginLogout" component={LoginLogOut}/>
         </Switch>
       </Router>
     </>

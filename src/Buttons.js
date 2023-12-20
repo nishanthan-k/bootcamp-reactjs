@@ -31,6 +31,9 @@ const Buttons = () => {
           <Link to="ReactLifeCycle">
             <button onClick={reload}>React LifeCycle</button>
           </Link>
+          <Link to="ReactForms">
+            <button onClick={reload}>React Forms</button>
+          </Link>
         </div>
       </div>
     </>
