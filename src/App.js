@@ -59,6 +59,8 @@ import MovieSearch from "./ReactLifeCycle/i-Design/MovieSearch/src/Movies";
 import ComponentDidMount from "./ReactLifeCycle/i-Design/ComponentDidMount/src/ComponentDidMount";
 import MovieDetail from './ReactLifeCycle/i-Design/MovieDetail/src/Movies';
 import GetDerivedStatsFromProps from './ReactLifeCycle/i-Design/getDerivedStatsFromProps/src/GetDerivedStatsFromProps';
+import MovieBooking from "./ReactLifeCycle/i-Design/MovieDetail/src/Movies"
+import Quiz from './ReactLifeCycle/i-Assess/QuizAttempt/src/Quiz';
 
 function App() {
   return (
@@ -135,6 +137,8 @@ function App() {
           <Route exact path="/ReactLifeCycle/MovieDetail" component={MovieDetail}/>
           <Route exact path="/ReactLifeCycle/ComponentDidMount" component={ComponentDidMount}/>
           <Route exact path="/ReactLifeCycle/GetDerivedStatsFromProps" component={GetDerivedStatsFromProps}/>
+          <Route exact path="/ReactLifeCycle/MovieBooking" component={MovieBooking}/>
+          <Route exact path="/ReactLifeCycle/Quiz" component={Quiz}/>
         </Switch>
       </Router>
     </>

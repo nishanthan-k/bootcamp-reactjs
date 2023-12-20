@@ -29,6 +29,12 @@ function ReactLifeCycle() {
         <Link to="/ReactLifeCycle/GetDerivedStatsFromProps">
           <button onClick={reload}>GetDerivedStatsFromProps</button>
         </Link>
+        <Link to="/ReactLifeCycle/MovieBooking">
+          <button onClick={reload}>MovieBooking</button>
+        </Link>
+        <Link to="/ReactLifeCycle/Quiz">
+          <button onClick={reload}>Quiz</button>
+        </Link>
       </div>
     </>
   );
